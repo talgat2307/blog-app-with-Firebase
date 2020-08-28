@@ -1,38 +1,116 @@
 .App {
-  text-align: center;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a {
+  text-decoration: none;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 50px;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.navbar li:hover,
+.navbar li a:hover{
+  color: #0886cf;
+  border-bottom: 2px solid #0886cf;
+}
+
+.posts {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.posts p {
+  line-height: 1.8;
+}
+
+.add {
+  border: 2px solid #000000;
+  padding: 50px 20px 20px 20px;
+  border-radius: 2px;
+}
+
+.add input,
+.add textarea {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.title,
+.description {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.singlePost {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 30px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.singlePost h3 {
+  text-align: center;
+  font-size: 25px;
 }
+
+.singlePost p {
+  line-height: 2;
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.buttons {
+  text-align: end;
+}
+
+.buttons button {
+  margin-left: 10px;
+}
+
+.about,
+.contacts {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  line-height: 2;
+  padding: 20px;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.main a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main a:hover {
+  color: #0886cf;
+}
+
